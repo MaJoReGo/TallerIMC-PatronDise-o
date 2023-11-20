@@ -1,0 +1,16 @@
+package controlador;
+
+import clases.Logica;
+import gui.VentanaPrincipal;
+
+public class Controlador {
+private Logica miLogica;
+private VentanaPrincipal miVentana;
+
+public void setLogica (Logica miLogica) {
+	this.miLogica = miLogica;
+}
+public void setVentanaPrincipal (VentanaPrincipal miVentanaPrincipal) {
+	this.miVentana = miVentanaPrincipal;
+}
+}

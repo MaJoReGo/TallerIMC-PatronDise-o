@@ -1,0 +1,27 @@
+package controlador;
+
+import clases.Logica;
+import gui.VentanaPrincipal;
+
+public class Principal {
+
+    Logica miLogica;
+    VentanaPrincipal miVentanaPrincipal;
+    Controlador miControlador;
+
+    public static void main(String[] args) {
+        Principal principal = new Principal();
+        principal.iniciar();
+    }
+
+    private void iniciar() {
+        miVentanaPrincipal = new VentanaPrincipal();
+        miLogica = new Logica();
+        miControlador = new Controlador();
+
+        miControlador.setMiVentanaPrincipal(miVentanaPrincipal);
+        miControlador.setMiLogica(miLogica);
+
+        miVentanaPrincipal.setVisible(true);
+    }
+}
